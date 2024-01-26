@@ -23,28 +23,28 @@ VanillaTilt.init(document.querySelector(".tilt"), {
   scale: 1.2
 });
 
-// //open mail on clicking hire me
-document.getElementById("openGmailBtn").addEventListener("click", function () {
-  // Replace 'uttrampra1@gmail.com' with the recipient's email address
-  var recipientEmail = "uttrampra1@gmail.com";
+// // //open mail on clicking hire me
+// document.getElementById("openGmailBtn").addEventListener("click", function () {
+//   // Replace 'uttrampra1@gmail.com' with the recipient's email address
+//   var recipientEmail = "uttrampra1@gmail.com";
 
-  // Set the subject and body
-  var emailSubject = "For%20Hiring"; // URL-encoded
-  var emailBody =
-    "Please%20use%20uttrampra1@gmail.com%20as%20the%20recipient%20to%20contact%20me%20for%20hiring."; // URL-encoded
+//   // Set the subject and body
+//   var emailSubject = "For%20Hiring"; // URL-encoded
+//   var emailBody =
+//     "Please%20use%20uttrampra1@gmail.com%20as%20the%20recipient%20to%20contact%20me%20for%20hiring."; // URL-encoded
 
-  // Create the Gmail compose link with subject and body
-  var gmailComposeLink =
-    "https://mail.google.com/mail/u/0/#inbox?compose=new&to=" +
-    encodeURIComponent(recipientEmail) +
-    "&su=" +
-    emailSubject +
-    "&body=" +
-    emailBody;
+//   // Create the Gmail compose link with subject and body
+//   var gmailComposeLink =
+//     "https://mail.google.com/mail/u/0/#inbox?compose=new&to=" +
+//     encodeURIComponent(recipientEmail) +
+//     "&su=" +
+//     emailSubject +
+//     "&body=" +
+//     emailBody;
 
-  // Open Gmail in a new tab or window
-  window.open(gmailComposeLink, "_blank");
-});
+//   // Open Gmail in a new tab or window
+//   window.open(gmailComposeLink, "_blank");
+// });
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
