@@ -207,6 +207,19 @@
        My expertise extends to SEO (Search Engine Optimization), where I optimize content to enhance visibility and 
        drive organic traffic to websites.
             </p>
+
+            <button id="resumeButton" onclick="toggleResume()" style="margin: 0;padding: 0; background-color: #b38c52; color: black; border-radius: 5px; padding: 5px;">
+ View My Resume</button>
+
+<!-- Container for the resume image -->
+<div id="resume-container" style="max-width: 600px; margin: 0 auto; overflow: hidden;">
+  <!-- Resume image initially hidden -->
+  <img id="resume" style="display: none; max-width: 100%; height: auto; border: 3px solid #b38c52; border-radius: 5px;" src="cv.jpg" alt="My Resume">
+</div>
+
+<!-- Download button for the image -->
+<button id="downloadButton" onclick="downloadResume()" style=" display: none; margin: 0;padding: 0; background-color: #b38c52; color: black; border-radius: 5px; padding: 5px;">
+  Download Resume</button>
           </section>
 
           <!--
