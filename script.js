@@ -312,3 +312,37 @@ function carousel() {
 }
 
 carousel();
+
+// pdf viewer
+   function toggleResume() {
+     var resume = document.getElementById("resume");
+     var button = document.getElementById("resumeButton");
+     var downloadButton = document.getElementById("downloadButton");
+
+     // Check if the resume image is currently hidden
+     if (resume.style.display === "none") {
+       // Show the resume image
+       resume.style.display = "inline";
+       // Change button text to "Hide Resume"
+       button.textContent = "Hide Resume";
+       // Show download button
+       downloadButton.style.display = "inline";
+     } else {
+       // Hide the resume image
+       resume.style.display = "none";
+       // Change button text to "Load Resume"
+       button.textContent = "Load Resume";
+       // Hide download button
+       downloadButton.style.display = "none";
+     }
+   }
+
+   function downloadResume() {
+     var resumeImage = document.getElementById("resume");
+     var link = document.createElement("a");
+     link.href = resumeImage.src;
+     link.download = "resume.jpg";
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
+   }
